@@ -40,6 +40,13 @@
             cursor: pointer;
         }
 
+        #social-ul {
+            list-style-type: none;
+            display: flex;
+            /* justify-content: flex-start; */
+            justify-content: space-evenly;
+        }
+
         @media screen and (max-width: 700px) {
             .about {
                 flex-direction: column;
@@ -52,6 +59,10 @@
             .photo {
                 margin: 10px 0;
                 ;
+            }
+
+            #social-ul {
+                justify-content: space-around;
             }
         }
     </style>
@@ -138,11 +149,11 @@
                         <h4>Deep Jyoti Saikia</h4>
                         <img class="" src="assets/images/ace.jpeg" alt="" style="width: 150px;">
 
-                        <ul class="my-4" style="list-style-type:none; display: flex; justify-content: flex-start;">
-                            <li><a href=""><img id="social" src="assets/images/instagram.png" alt=""></a></li>
-                            <li><a href=""><img id="social" src="assets/images/facebook.png" alt=""></a></li>
-                            <li><a href=""><img id="social" src="assets/images/youtube.png" alt=""></a></li>
-                        </ul>
+                        <div id="social-ul" class="my-4">
+                            <div><a href=""><img id="social" src="assets/images/instagram.png" alt=""></a></div>
+                            <div><a href=""><img id="social" src="assets/images/facebook.png" alt=""></a></div>
+                            <div><a href=""><img id="social" src="assets/images/youtube.png" alt=""></a></div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-9 text-justify">
