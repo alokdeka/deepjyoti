@@ -26,8 +26,20 @@
             display: flex;
         }
 
-        @media screen and (max-width: 480px) {
+        #certification {
+            display: flex;
+        }
+
+        .card {
+            margin: 10px 0;
+        }
+
+        @media screen and (max-width: 700px) {
             .about {
+                flex-direction: column;
+            }
+
+            #certification {
                 flex-direction: column;
             }
 
@@ -43,7 +55,7 @@
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
-        <a class="navbar-brand" href="#"><img src="assets/images/gym.png" style="width: 30px;" alt="PLASMAFINDER">
+        <a class="navbar-brand" href="#"><img src="assets/images/gym.png" style="width: 30px;" alt="">
             <b>DEEPJYOTI SAIKIA</b></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -110,20 +122,52 @@
                 <h1 class="display-4">About Me </h1>
             </div>
             <div class="about">
-                <div class="col-md-3 text-center photo"><img src="assets/images/profile.png" alt=""></div>
+                <div class="col-md-3 text-center photo">
+                    <div>
+                        <img src="assets/images/id.jpeg" alt="" style="width: 150px;">
+                    </div>
+                    <div class="">
+                        <h4>Deep Jyoti Saikia</h4>
+                        FITNESS TRAINER
+                    </div>
+                </div>
                 <div class="col-md-9 text-justify">
-                    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its
-                        parent.
-                        This is a modified jumbotron that occupies the entire horizontal space of its parent.This is a
-                        modified
-                        jumbotron that occupies the entire horizontal space of its parent.This is a modified jumbotron
-                        that
-                        occupies the entire horizontal space of its parent.This is a modified jumbotron that occupies
-                        the entire
-                        horizontal space of its parent.This is a modified jumbotron that occupies the entire horizontal
-                        space of
-                        its parent.
+                    <p class="lead" style="text-indent: 40px;">An Assamese guy from Guwahati (Assam), who is promoting
+                        about health and fitness
+                        since the year 2013. The goal of my blogs is to educate people and motivate them for adopting a
+                        healthy lifestyle. I started my childhood days playing the sport that is the most famous in
+                        India, Cricket. I started playing cricket at a very young age and represented my school and
+                        college in the respective teams. As a kid I was very much into fitness and sports. During my
+                        junior college degree, I started going to the gym and loved the gymming atmosphere. In 2017, I
+                        went to associate with Gold’s Gym, Shillong, working till present!
                     </p>
+
+                    <p class="lead" style="text-indent: 40px;">During my career, I dealt with a number of clients and
+                        have fulfilled their goals
+                        respectively. I
+                        trained clients who came for Weight Loss, General Fitness, CrossFit, Fat Loss, Strength and
+                        Conditioning and helped people having chronic health issues with special needs like Fibromyalgia
+                        ,Cancer, workout during pregnancy, Rheumatoid Arthritis,Hypothyroidism, PCOS, Slipped discs,
+                        Sports injuries etc.</p>
+
+                    <div class="col-md-12" id="certification">
+                        <div class="col-md-8">
+                            <h4>COURSES AND CERTIFICATIONS:</h4>
+                            <ul>
+                                <li>Certified Personal Trainer (Persuing) - American Council on Exercise(ACE) 2020</li>
+                                <li>Certified Personal Trainer - Gold’s Gym Fitness Institute (2018)</li>
+                                <li>Certified Personal Trainer - ACTION, USA (2017)</li>
+                                <li>Certified in CPR and AED - American Safety and Health Institute (2020)</li>
+                                <li>Certified Level - 1 CrossFit Trainer - CrossFit (2019)</li>
+                                <li>Certified in CrossFit Running Course - CrossFit (2020)</li>
+                                <li>Certified Kettlebell Trainer - EKFA (2018)</li>
+                                <li>Certified Group Instructor - Gold’s Gym Fitness Institute (2018)</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4" style="text-align: center;">
+                            <img src="assets/images/1.jpeg" alt="" style="width: 200px;">
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -186,7 +230,47 @@
     </div>
 
     <div class="container">
-
+        <div class="col-md-12">
+            <h1 class="display-4 text-center my-3">Achievements </h1>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card" style="width: ;">
+                        <img src="assets/images/client1.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: ;">
+                        <img src="assets/images/client2.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: ;">
+                        <img src="assets/images/client3.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: ;">
+                        <img src="assets/images/client4.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
