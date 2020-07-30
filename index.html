@@ -34,6 +34,12 @@
             margin: 10px 0;
         }
 
+        #social {
+            width: 40px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
         @media screen and (max-width: 700px) {
             .about {
                 flex-direction: column;
@@ -68,7 +74,7 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="gallery/index.html">Blogs</a>
+                    <a class="nav-link" href="#">Blogs</a>
                 </li>
             </ul>
 
@@ -128,9 +134,15 @@
                     <div>
                         <img src="assets/images/id.jpeg" alt="" style="width: 150px;">
                     </div>
-                    <div class="">
+                    <div class="mx-auto">
                         <h4>Deep Jyoti Saikia</h4>
                         <img class="" src="assets/images/ace.jpeg" alt="" style="width: 150px;">
+
+                        <ul class="my-4" style="list-style-type:none; display: flex; justify-content: flex-start;">
+                            <li><a href=""><img id="social" src="assets/images/instagram.png" alt=""></a></li>
+                            <li><a href=""><img id="social" src="assets/images/facebook.png" alt=""></a></li>
+                            <li><a href=""><img id="social" src="assets/images/youtube.png" alt=""></a></li>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-md-9 text-justify">
@@ -179,7 +191,7 @@
 
     <div class="container my-4">
         <div class="col-md-12">
-            <h1 class="display-4 text-center my-3">Blissful Clients </h1>
+            <h1 class=" text-center my-3">Blissful Clients </h1>
             <hr>
             <div class="row">
                 <div class="col-lg-4 text-center">
@@ -231,13 +243,14 @@
         </div>
     </div>
 
-    <div class="container my-5">
+    <div class="jumbotron-fluid my-5">
         <img src="assets/images/3.jpeg" class="img-fluid" alt="Responsive image">
     </div>
 
     <div class="container my-4">
         <div class="col-md-12">
-            <h1 class="display-4 text-center my-3">Some Successful Transformations</h1>
+            <!-- <h1 class="display-4 text-center my-3">Some Successful Transformations</h1> -->
+            <h1 class="text-center my-3">Some Successful Transformations</h1>
             <hr>
             <div class="row">
                 <div class="col-md-3">
