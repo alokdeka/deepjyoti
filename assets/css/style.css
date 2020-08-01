@@ -6,8 +6,10 @@ html {
 
 
 body {
-    font-family: 'Nunito', sans-serif;
-    font-family: 'Open Sans Condensed', sans-serif;
+    /* font-family: 'Nunito', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif; */
+
+    font-family: 'Roboto Condensed', sans-serif;
 
     animation-name: example;
     animation-duration: 1s;
@@ -23,102 +25,131 @@ body {
     }
 }
 
-#blink {
-    animation: blinking 1s ease infinite;
-}
-
-@keyframes blinking {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-#required-span {
-    color: red;
-}
-
-.arrow {
-    width: 80px;
-    margin: 20px 0;
-}
-
-.rules {
-    text-align: center;
-}
-
-.page-footer {
-    background-color: #dedede;
-}
-
 a,
 a:visited {
     text-decoration: none;
     color: #00AE68;
 }
 
-.btnPurple {
-    background: #A74982;
+.about {
+    display: flex;
 }
 
-a.button {
-    display: block;
-    width: 200px;
-    padding: 0;
-    margin: 10px 20px 10px 0;
-    font-weight: 600;
-    text-align: center;
-    line-height: 50px;
-    color: #FFF;
-    border-radius: 5px;
-    transition: all 0.2s;
+#certification {
+    display: flex;
 }
 
-
-.btnPurple.btnPush {
-    box-shadow: 0px 5px 0px 0px #6D184B;
+.card {
+    margin: 10px 0;
 }
 
-.btnPush:hover {
-    margin-top: 15px;
-    margin-bottom: 5px;
+#social {
+    width: 40px;
+    margin: 0 5px;
+    cursor: pointer;
 }
 
-.btnPurple.btnPush:hover {
-    box-shadow: 0px 0px 0px 0px #6D184B;
+#social-ul {
+    list-style-type: none;
+    display: flex;
+    /* justify-content: flex-start; */
+    justify-content: space-evenly;
 }
 
-.btnPurple.btnBorder {
-    box-shadow: 0px 0px 0px 0px #6D184B;
+.navbar .active {
+    border-bottom: 2px solid #fff;
 }
 
-.btnPurple.btnBorder:hover {
-    box-shadow: 0px 0px 0px 5px #6D184B;
+.navbar li a:hover {
+    background-color: #fff;
+    color: black !important;
+    transition: 0.3s linear;
 }
 
-#reg-form {
-    border: 1px solid #dee0df;
-    border-radius: 10px;
+.clients img {
+    width: 150px;
+    border-radius: 75px;
 }
 
+/* Make slider next and prev visible */
+#next,
+#prev {
+    filter: invert(100%);
+}
 
-@media only screen and (max-width : 600px) {
-    #reg-form {
-        border: 0;
+@media screen and (max-width: 700px) {
+    .about {
+        flex-direction: column;
     }
 
-    .heading-flex {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: left;
+    .about p {
+        font-size: 14px;
     }
 
-    a.button {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
+    .clients p {
+        font-size: 14px;
+    }
+
+    .clients h2 {
+        font-size: 18px;
+    }
+
+    #certification {
+        flex-direction: column;
+    }
+
+    .photo {
+        margin: 10px 0;
+        ;
+    }
+
+    #social-ul {
+        justify-content: space-around;
+    }
+
+    #fffl {
+        display: flex !important;
+        flex-direction: row;
+    }
+
+    .navbar b {
+        font-size: 15px !important;
+    }
+
+    .navbar .active {
+        border-bottom: none;
+    }
+
+    #certification {
+        padding: 0 0;
+    }
+
+    .card-body {
+        padding: 0 5px;
+    }
+
+    .card-body p {
+        margin: 5px 0;
+        font-size: 12px;
+    }
+
+    .page-footer {
+        font-size: 14px;
+    }
+}
+
+/* Dark mode */
+@media(prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: #fff;
+    }
+
+    .jumbotron {
+        background-color: black;
+    }
+
+    .card p {
+        color: black;
     }
 }

@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Fontawesome -->
@@ -20,89 +23,6 @@
         integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
 
     <title>DEEPJYOTI SAIKIA | HOME</title>
-
-    <style>
-        .about {
-            display: flex;
-        }
-
-        #certification {
-            display: flex;
-        }
-
-        .card {
-            margin: 10px 0;
-        }
-
-        #social {
-            width: 40px;
-            margin: 0 5px;
-            cursor: pointer;
-        }
-
-        #social-ul {
-            list-style-type: none;
-            display: flex;
-            /* justify-content: flex-start; */
-            justify-content: space-evenly;
-        }
-
-        .active {
-            border-bottom: 2px solid #fff;
-        }
-
-        .navbar li a:hover {
-            background-color: #fff;
-            color: black !important;
-            transition: 0.3s linear;
-        }
-
-        .clients img {
-            width: 150px;
-            border-radius: 75px;
-        }
-
-        /* Make slider next and prev visible */
-        #next,
-        #prev {
-            filter: invert(100%);
-        }
-
-        @media screen and (max-width: 700px) {
-            .about {
-                flex-direction: column;
-            }
-
-            #certification {
-                flex-direction: column;
-            }
-
-            .photo {
-                margin: 10px 0;
-                ;
-            }
-
-            #social-ul {
-                justify-content: space-around;
-            }
-        }
-
-        /* Dark mode */
-        @media(prefers-color-scheme: dark) {
-            body {
-                background-color: black;
-                color: #fff;
-            }
-
-            .jumbotron {
-                background-color: black;
-            }
-
-            .card p {
-                color: black;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -258,41 +178,31 @@
                 <!-- Slide 1 -->
                 <div class="carousel-item active">
                     <div class="container my-4">
-                        <div class="col-md-12 clients">
+                        <div class="col-md-12 col-12 clients">
                             <div class="row">
-                                <div class="col-lg-4 text-center">
+                                <div class="col-md-4 text-center">
                                     <img src="assets/images/c1.jpeg" alt="">
                                     <h2>Dharmesh Gautam</h2>
                                     <p>"Deep is a qualified trainer well versed in the training principles. He has sound
                                         knowledge
                                         base and can be trusted.I wish him all the best" - Dharmesh Gautam</p>
-                                </div><!-- /.col-lg-4 -->
-                                <div class="col-lg-4 text-center">
+                                </div>
+                                <div class="col-md-4 text-center">
                                     <img src="assets/images/c2.jpeg" alt="">
                                     <h2>Dr. Apurba Marak</h2>
                                     <p>"Deep has been instrumental in transforming my fitness journey. From yoga to my
                                         headstands to my weight lifting, he has guided me in the best way possible." -
                                         Dr. Apurba Marak</p>
-                                </div><!-- /.col-lg-4 -->
-                                <div class="col-lg-4 text-center">
-                                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-                                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                                        focusable="false" role="img" aria-label="Placeholder: 140x140">
-                                        <title>Placeholder</title>
-                                        <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%"
-                                            fill="#777" dy=".3em">140x140</text>
-                                    </svg>
-                                    <h2>Heading</h2>
-                                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                                        Vestibulum
-                                        id
-                                        ligula
-                                        porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor
-                                        mauris
-                                        condimentum
-                                        nibh,
-                                        ut fermentum massa justo sit amet risus.</p>
-                                </div><!-- /.col-lg-4 -->
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <img src="assets/images/c3.jpeg" alt="">
+                                    <h2>Vivek Sinha</h2>
+                                    <p>"Deep is a trainer who always encourages and constantly motivates me and push’s
+                                        me to height which I never though is possible.
+                                        Thank you for inspiring me to be excellent in everything I do. And there is
+                                        nothing that beats that feeling. I owe that to you.
+                                        Thank you!!!!!" - Vivek Sinha</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -319,49 +229,49 @@
         </div>
 
         <!-- Transformation achieved -->
-        <div class="container my-4">
+        <div class="container-fluid my-4">
             <div class="col-md-12">
                 <!-- <h1 class="display-4 text-center my-3">Some Successful Transformations</h1> -->
                 <h1 class="text-center my-3">Transformations Achieved</h1>
                 <hr>
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-6">
                         <div class="card">
                             <img src="assets/images/client1.jpeg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of the card's content.</p>
+                                <p class="card-text"><b>Muscle Gain Program</b></p>
+                                <p class="card-text">Client: Swapan Paul</p>
+                                <p class="card-text">Duration: 50 Days</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-6">
                         <div class="card">
                             <img src="assets/images/client2.jpeg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of the card's content.</p>
+                                <p class="card-text"><b>Transformation Program</b></p>
+                                <p class="card-text">Client: Johar Das</p>
+                                <p class="card-text">Duration: 90 Days</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-6">
                         <div class="card">
                             <img src="assets/images/client3.jpeg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of the card's content.</p>
+                                <p class="card-text"><b>Toning Program</b></p>
+                                <p class="card-text">Client: Stephanie Pariat</p>
+                                <p class="card-text">Duration: 90 Days</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-6">
                         <div class="card">
                             <img src="assets/images/client4.jpeg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of the card's content.</p>
+                                <p class="card-text"><b>Transformation Program</b></p>
+                                <p class="card-text">Client: Preti Singh</p>
+                                <p class="card-text">Duration: 12 Months</p>
                             </div>
                         </div>
                     </div>
