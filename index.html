@@ -62,8 +62,9 @@
             border-radius: 75px;
         }
 
-        .carousel-control-next,
-        .carousel-control-prev {
+        /* Make slider next and prev visible */
+        #next,
+        #prev {
             filter: invert(100%);
         }
 
@@ -267,22 +268,11 @@
                                         base and can be trusted.I wish him all the best" - Dharmesh Gautam</p>
                                 </div><!-- /.col-lg-4 -->
                                 <div class="col-lg-4 text-center">
-                                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-                                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                                        focusable="false" role="img" aria-label="Placeholder: 140x140">
-                                        <title>Placeholder</title>
-                                        <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%"
-                                            fill="#777" dy=".3em">140x140</text>
-                                    </svg>
-                                    <h2>Heading</h2>
-                                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia
-                                        odio sem nec
-                                        elit.
-                                        Cras
-                                        mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus
-                                        commodo, tortor
-                                        mauris
-                                        condimentum nibh.</p>
+                                    <img src="assets/images/c2.jpeg" alt="">
+                                    <h2>Dr. Apurba Marak</h2>
+                                    <p>"Deep has been instrumental in transforming my fitness journey. From yoga to my
+                                        headstands to my weight lifting, he has guided me in the best way possible." -
+                                        Dr. Apurba Marak</p>
                                 </div><!-- /.col-lg-4 -->
                                 <div class="col-lg-4 text-center">
                                     <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
@@ -312,11 +302,11 @@
                     <img src="..." class="d-block w-100" alt="...">
                 </div> -->
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <a class="carousel-control-prev" id="prev" href="#carouselExampleControls" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <a class="carousel-control-next" id="next" href="#carouselExampleControls" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
