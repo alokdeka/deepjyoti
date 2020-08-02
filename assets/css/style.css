@@ -1,155 +1,161 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Open+Sans+Condensed:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Open+Sans+Condensed:wght@300&display=swap");
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-
 body {
-    /* font-family: 'Nunito', sans-serif;
+  /* font-family: 'Nunito', sans-serif;
     font-family: 'Open Sans Condensed', sans-serif; */
 
-    font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 
-    animation-name: example;
-    animation-duration: 1s;
+  animation-name: example;
+  animation-duration: 1s;
 }
 
 @keyframes example {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 a,
 a:visited {
-    text-decoration: none;
-    color: #00AE68;
+  text-decoration: none;
+  color: #00ae68;
 }
 
 .about {
-    display: flex;
+  display: flex;
 }
 
 #certification {
-    display: flex;
+  display: flex;
 }
 
 .card {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 #social {
-    width: 40px;
-    margin: 0 5px;
-    cursor: pointer;
+  width: 40px;
+  margin: 0 5px;
+  cursor: pointer;
 }
 
 #social-ul {
-    list-style-type: none;
-    display: flex;
-    /* justify-content: flex-start; */
-    justify-content: space-evenly;
+  list-style-type: none;
+  display: flex;
+  /* justify-content: flex-start; */
+  justify-content: space-evenly;
 }
 
 .navbar .active {
-    border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 
 .navbar li a:hover {
-    background-color: #fff;
-    color: black !important;
-    transition: 0.3s linear;
+  background-color: #fff;
+  color: black !important;
+  transition: 0.3s linear;
 }
 
 .clients img {
-    width: 150px;
-    border-radius: 75px;
+  width: 150px;
+  border-radius: 75px;
 }
 
 /* Make slider next and prev visible */
 #next,
 #prev {
-    filter: invert(100%);
+  filter: invert(100%);
 }
 
+/* Media queries */
 @media screen and (max-width: 700px) {
-    .about {
-        flex-direction: column;
-    }
+  .about {
+    flex-direction: column;
+  }
 
-    .about p {
-        font-size: 14px;
-    }
+  .about p {
+    font-size: 14px;
+  }
 
-    .clients p {
-        font-size: 14px;
-    }
+  .clients img {
+    width: 80px;
+  }
+  .clients p {
+    font-size: 14px;
+  }
 
-    .clients h2 {
-        font-size: 18px;
-    }
+  .clients h2 {
+    font-size: 18px;
+  }
 
-    #certification {
-        flex-direction: column;
-    }
+  #certification {
+    flex-direction: column;
+  }
 
-    .photo {
-        margin: 10px 0;
-        ;
-    }
+  .photo {
+    margin: 10px 0;
+  }
 
-    #social-ul {
-        justify-content: space-around;
-    }
+  #social-ul {
+    justify-content: space-around;
+  }
 
-    #fffl {
-        display: flex !important;
-        flex-direction: row;
-    }
+  #fffl {
+    display: flex !important;
+    flex-direction: row;
+  }
 
-    .navbar b {
-        font-size: 15px !important;
-    }
+  .navbar b {
+    font-size: 15px !important;
+  }
 
-    .navbar .active {
-        border-bottom: none;
-    }
+  .navbar .active {
+    border-bottom: none;
+  }
 
-    #certification {
-        padding: 0 0;
-    }
+  #certification {
+    padding: 0 0;
+  }
 
-    .card-body {
-        padding: 0 5px;
-    }
+  .card-body {
+    padding: 0 5px;
+  }
 
-    .card-body p {
-        margin: 5px 0;
-        font-size: 12px;
-    }
+  .card-body p {
+    margin: 5px 0;
+    font-size: 12px;
+  }
 
-    .page-footer {
-        font-size: 14px;
-    }
+  .page-footer {
+    font-size: 14px;
+  }
 }
 
 /* Dark mode */
-@media(prefers-color-scheme: dark) {
-    body {
-        background-color: black;
-        color: #fff;
-    }
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: #fff;
+  }
 
-    .jumbotron {
-        background-color: black;
-    }
+  .jumbotron {
+    background-color: black;
+  }
 
-    .card p {
-        color: black;
-    }
+  .card p {
+    color: black;
+  }
+  #next,
+  #prev {
+    filter: invert(0%);
+  }
 }
