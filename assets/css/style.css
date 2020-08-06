@@ -95,14 +95,15 @@ a:visited {
 
 
 #carousel-inner h1 {
-  color: #ff6b6b;
+  color: #fff;
   font-weight: bolder;
-  /* text-shadow: 2px 2px 18px red; */
+  text-shadow: 2px 2px 5px black;
 }
 
 #carousel-inner p {
-  color: #ff6b6b;
+  color: #fff;
   font-weight: bolder;
+  text-shadow: 2px 2px 5px black;
 }
 
 /* Bootstrap indicator: Square */
