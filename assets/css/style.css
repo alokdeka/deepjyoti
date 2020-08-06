@@ -97,13 +97,13 @@ a:visited {
 #carousel-inner h1 {
   color: #fff;
   font-weight: bolder;
-  text-shadow: 2px 2px 5px black;
+  text-shadow: 2px 2px 8px black;
 }
 
 #carousel-inner p {
   color: #fff;
   font-weight: bolder;
-  text-shadow: 2px 2px 5px black;
+  text-shadow: 2px 2px 4px black;
 }
 
 /* Bootstrap indicator: Square */
@@ -124,6 +124,39 @@ h2,
 h4,
 #certification li {
   pointer-events: none;
+}
+
+.middle_image {
+  position: relative;
+}
+
+.middle_text {
+  position: absolute;
+  top: 200px;
+  right: 200px;
+
+  animation: myfirst 5s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes myfirst {
+  0% {
+    right: 100px;
+  }
+
+  25% {
+    right: 200px;
+    top: 100px;
+  }
+
+  50% {
+    right: 300px;
+    top: 200px;
+  }
+
+  100% {
+    right: 100px;
+  }
 }
 
 /* Media queries */
@@ -187,6 +220,10 @@ h4,
 
   #blissfulClients p {
     height: unset;
+  }
+
+  .middle_text {
+    display: none;
   }
 }
 
