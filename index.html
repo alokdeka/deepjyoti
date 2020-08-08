@@ -23,6 +23,76 @@
         integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
 
     <title>DEEPJYOTI SAIKIA | HOME</title>
+
+    <style>
+        /* Weekly routine button */
+        .button-wrapper {
+            display: block;
+            text-align: center;
+        }
+
+        .button-wrapper img {
+            width: 20px;
+            transform: translateY(-5px);
+        }
+
+        .button {
+            position: fixed;
+            bottom: 90px;
+            right: 30px;
+            border: none;
+            border-radius: 3em;
+            display: inline-block;
+            font-size: 1em;
+            padding: 0.5em 1em;
+            width: auto;
+            z-index: 1000;
+
+            cursor: pointer !important;
+
+            /* -webkit-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 1);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 1);
+            box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 1); */
+
+            animation: blink 2s infinite;
+        }
+
+        @keyframes blink {
+            0% {
+                /* opacity: 0; */
+                background-color: #e71d36;
+                color: #fff;
+                bottom: 90px;
+            }
+
+            50% {
+                /* opacity: 1; */
+                background-color: rgb(255, 255, 255);
+                color: rgb(0, 0, 0);
+                bottom: 120px;
+            }
+
+            100% {
+                /* opacity: 0; */
+                background-color: #e71d36;
+                color: #fff;
+                bottom: 90px;
+            }
+        }
+
+        .cta-button {
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            transition: transform 0.2s;
+        }
+
+        .cta-button:hover {
+            background-color: rgb(44, 44, 44);
+            text-decoration: none;
+            transform: translateY(2px);
+            animation-play-state: paused;
+        }
+    </style>
 </head>
 
 <body>
@@ -429,6 +499,10 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="button-wrapper">
+            <a class="button cta-button" href="routine.html"><img src="assets/images/new.png"> Weekly Workout</a>
         </div>
 
 
