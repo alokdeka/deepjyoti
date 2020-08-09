@@ -18,27 +18,24 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>DEEPJYOTI SAIKIA | SERVICES</title>
+    <title>DEEPJYOTI SAIKIA | WEEKLY ROUTINE</title>
 
     <style>
-        #services img {
-            width: 300px;
-            margin: 30px 0;
-            transition: transform 0.2s;
+        .container {
+            color: #fff;
         }
 
-        #services {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
+        .container #date {
+            width: 40px;
         }
 
-        #services img:hover {
-            transform: translateY(5px);
+        .container img {
+            width: 90%;
         }
 
         #social {
             transition: transform 0.2s;
+            width: 30px;
         }
 
         #social:hover {
@@ -47,48 +44,24 @@
 
         p {
             color: #fff;
-            text-align: center;
+            text-align: justify;
             pointer-events: unset;
         }
 
-        /* Call now button */
-        .button-wrapper {
+        .center {
             display: block;
-            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            width: 50%;
         }
 
-        .button {
-            position: fixed;
-            bottom: 90px;
-            right: 30px;
-            border: none;
-            border-radius: 3em;
-            display: inline-block;
-            font-size: 1em;
-            padding: 0.5em 1em;
-            width: auto;
-
-            -webkit-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 1);
-            -moz-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 1);
-            box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 1);
+        .image {
+            margin-top: 90px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-around;
         }
-
-        .cta-button {
-            background-color: rgb(0, 0, 0);
-            color: #fff !important;
-        }
-
-        .cta-button:hover {
-            background-color: rgb(44, 44, 44);
-            text-decoration: none;
-        }
-
-        /* Media queries */
-        /* @media screen and (max-width: 400px) {
-            .button-wrapper {
-                display: block;
-            }
-        } */
     </style>
 </head>
 
@@ -108,7 +81,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="services.html">Services</a>
                 </li>
                 <li class="nav-item dropdown">
@@ -134,37 +107,54 @@
         </div>
     </nav>
 
-    <h1 class="text-center p-4" style="color: #fff;">SERVICES</h1>
+    <div class="container my-4">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>What is Virtual Online Training ? </h2>
+                    <p>It's a Virtual Online one on one Personal Training Platform where You will get fitness classes
+                        based
+                        upon your goal and needs. </p>
 
-    <p>For more details contact me through
-        <a href="https://wa.me/message/NIWB3NTRAFTSL1"><img id="social" src="assets/images/whatsapp.png" alt=""></a>
-        <a href="mailto:dsaikia130@gmail.com"><img id="social" src="assets/images/gmail.png" alt=""></a>
-    </p>
-    <div class="container" id="services">
-        <div>
-            <img src="assets/images/online-personal-training.png" alt="">
+                    <p> Each session will be of 60mins</p>
+
+
+                    <b>WHAT IS INCLUDED?</b>
+                    <ol type="1">
+                        <li>Bodyweight Training </li>
+                        <li>HIIT (Interval Training)</li>
+                        <li>Sports Yoga</li>
+                        <li>Animal Flow</li>
+                        <li>Flexibility and mobility Training</li>
+                        <li>Cardio</li>
+                        <li>CrossFit</li>
+                        <li>Full Body Stretching</li>
+                        <li>Core and Functional Training</li>
+                        <li>Abs Classes</li>
+                        <li>Postural Corrective Program</li>
+                        <li>Special Population Program</li>
+                        <li>Strength and conditioning </li>
+                    </ol>
+                </div>
+                <div class="col-md-6 image">
+                    <div>
+                        <img src="assets/images/virtual4.png" alt="">
+                    </div>
+                    <div>
+                        <img src="assets/images/virtual2.png" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div>
-            <img src="assets/images/online-crossfit-training.png" alt="">
-        </div>
-
-        <div>
-            <img src="assets/images/diet-consultation.png" alt="">
-        </div>
-
-        <div>
-            <img src="assets/images/fitness-consultation.png" alt="">
-        </div>
-
-        <div>
-            <img src="assets/images/transformation.png" alt="">
-        </div>
+        <!-- More info -->
+        <p class="text-right">***<i> For more details contact me:</i>
+            <a href="https://wa.me/message/NIWB3NTRAFTSL1"><img id="social" src="assets/images/whatsapp.png" alt=""></a>
+            <a href="mailto:dsaikia130@gmail.com"><img id="social" src="assets/images/gmail.png" alt=""></a>
+        </p>
     </div>
 
-    <div class="button-wrapper">
-        <a class="button cta-button" href="tel:8638137762">Call Now</a>
-    </div>
+
 
     <!-- FOOTER -->
     <footer class="page-footer font-small bg-dark">

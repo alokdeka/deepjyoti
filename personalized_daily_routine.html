@@ -18,27 +18,20 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>DEEPJYOTI SAIKIA | SERVICES</title>
+    <title>DEEPJYOTI SAIKIA | WEEKLY ROUTINE</title>
 
     <style>
-        #services img {
-            width: 300px;
-            margin: 30px 0;
-            transition: transform 0.2s;
+        .container {
+            color: #fff;
         }
 
-        #services {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-        }
-
-        #services img:hover {
-            transform: translateY(5px);
+        .container #date {
+            width: 40px;
         }
 
         #social {
             transition: transform 0.2s;
+            width: 30px;
         }
 
         #social:hover {
@@ -47,48 +40,22 @@
 
         p {
             color: #fff;
-            text-align: center;
+            text-align: justify;
             pointer-events: unset;
         }
 
-        /* Call now button */
-        .button-wrapper {
+        .center {
             display: block;
-            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            width: 50%;
         }
 
-        .button {
-            position: fixed;
-            bottom: 90px;
-            right: 30px;
-            border: none;
-            border-radius: 3em;
-            display: inline-block;
-            font-size: 1em;
-            padding: 0.5em 1em;
-            width: auto;
-
-            -webkit-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 1);
-            -moz-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 1);
-            box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 1);
+        .image {
+            margin-top: 50px;
+            margin-bottom: 20px;
         }
-
-        .cta-button {
-            background-color: rgb(0, 0, 0);
-            color: #fff !important;
-        }
-
-        .cta-button:hover {
-            background-color: rgb(44, 44, 44);
-            text-decoration: none;
-        }
-
-        /* Media queries */
-        /* @media screen and (max-width: 400px) {
-            .button-wrapper {
-                display: block;
-            }
-        } */
     </style>
 </head>
 
@@ -108,7 +75,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="services.html">Services</a>
                 </li>
                 <li class="nav-item dropdown">
@@ -134,37 +101,52 @@
         </div>
     </nav>
 
-    <h1 class="text-center p-4" style="color: #fff;">SERVICES</h1>
+    <div class="container my-4">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Personalized Daily Routine Plans /- </h2>
 
-    <p>For more details contact me through
-        <a href="https://wa.me/message/NIWB3NTRAFTSL1"><img id="social" src="assets/images/whatsapp.png" alt=""></a>
-        <a href="mailto:dsaikia130@gmail.com"><img id="social" src="assets/images/gmail.png" alt=""></a>
-    </p>
-    <div class="container" id="services">
-        <div>
-            <img src="assets/images/online-personal-training.png" alt="">
+                    <p><b>BASED UPON THE NEED and equipment availability </b></p>
+                    <ul>
+                        <li>Muscle gain</li>
+                        <li>Flexibility and mobility</li>
+
+                        <li> ABS Training</li>
+
+                        <li>Postural Correction</li>
+                        <li>Weightloss/ Fatloss</li>
+
+                        <li>Toning</li>
+
+                        <li>Cardio</li>
+                        <li>Diabetes/ Hypertension/ any other metabolic disease</li>
+
+                        <li>Arthritis</li>
+                        <li>PCOD</li>
+                        <li>Depression</li>
+
+                        <li>Fibromyalgia and many more</li>
+                        <li>Musculoskeletal Injuries</li>
+                        <li>post rehabilitation </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 image">
+                    <div>
+                        <img class="center" src="assets/images/virtual4.png" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div>
-            <img src="assets/images/online-crossfit-training.png" alt="">
-        </div>
-
-        <div>
-            <img src="assets/images/diet-consultation.png" alt="">
-        </div>
-
-        <div>
-            <img src="assets/images/fitness-consultation.png" alt="">
-        </div>
-
-        <div>
-            <img src="assets/images/transformation.png" alt="">
-        </div>
+        <!-- More info -->
+        <p class="text-right">***<i> For more details contact me:</i>
+            <a href="https://wa.me/message/NIWB3NTRAFTSL1"><img id="social" src="assets/images/whatsapp.png" alt=""></a>
+            <a href="mailto:dsaikia130@gmail.com"><img id="social" src="assets/images/gmail.png" alt=""></a>
+        </p>
     </div>
 
-    <div class="button-wrapper">
-        <a class="button cta-button" href="tel:8638137762">Call Now</a>
-    </div>
+
 
     <!-- FOOTER -->
     <footer class="page-footer font-small bg-dark">
