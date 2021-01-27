@@ -126,12 +126,14 @@ h4,
 
 .middle_image {
   position: relative;
+  background-size: cover;
 }
 
 .middle_text {
   position: absolute;
   top: 200px;
   right: 200px;
+  color: #111;
 
   animation: myfirst 5s infinite;
   animation-direction: alternate;
@@ -246,6 +248,32 @@ h4,
   .middle_text {
     display: none;
   }
+
+  .carousel-caption h1{
+    font-size: 1rem;
+  }
+  .carousel-caption p{
+    font-size: 12px;
+  }
+}
+
+/* Universal Dark mode */
+body {
+  background-color: black;
+  color: #fff;
+}
+
+.jumbotron {
+  background-color: black;
+}
+
+.card p {
+  color: black;
+}
+
+#next,
+#prev {
+  filter: invert(0%);
 }
 
 /* Dark mode */
