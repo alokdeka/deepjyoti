@@ -129,11 +129,15 @@ h4,
   background-size: cover;
 }
 
+.middle_image img{
+  opacity: 0.5;
+}
+
 .middle_text {
   position: absolute;
   top: 200px;
   right: 200px;
-  color: #111;
+  color: #fff;
 
   animation: myfirst 5s infinite;
   animation-direction: alternate;
