@@ -135,12 +135,13 @@ h4,
 
 .middle_text {
   position: absolute;
-  top: 200px;
-  right: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #fff;
 
-  animation: myfirst 5s infinite;
-  animation-direction: alternate;
+  /* animation: myfirst 5s infinite;
+  animation-direction: alternate; */
 }
 
 /* Custom scrollbar */
@@ -250,7 +251,11 @@ h4,
   }
 
   .middle_text {
-    display: none;
+    /* display: none; */
+    font-size: 12px;
+  }
+  .middle_text h1{
+    font-size: 18px;
   }
 
   .carousel-caption h1{
